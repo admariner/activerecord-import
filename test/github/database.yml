@@ -1,6 +1,6 @@
 common: &common
   username: root
-  password:
+  password: root
   encoding: utf8
   host:     localhost
   database: activerecord_import_test
@@ -37,6 +37,7 @@ oracle:
 postgresql: &postgresql
   <<: *common
   username: postgres
+  password: postgres
   adapter: postgresql
   min_messages: warning
 
